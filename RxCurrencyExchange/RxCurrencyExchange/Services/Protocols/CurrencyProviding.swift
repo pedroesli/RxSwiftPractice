@@ -15,4 +15,5 @@ enum CurrencyProvidingError: Error {
 
 protocol CurrencyProviding {
     func fetchSupportedCurrencies() -> Single<[CurrencySymbol]>
+    func fetchCurrencyValue(from: CurrencySymbol, to: CurrencySymbol) -> Single<Double>
 }

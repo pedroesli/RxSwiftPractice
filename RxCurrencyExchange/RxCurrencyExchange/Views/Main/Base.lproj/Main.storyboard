@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,9 +16,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZL-Pf-OEP">
+                                <rect key="frame" x="16" y="109" width="361" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="Dolar"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDk-RT-BlD">
+                                <rect key="frame" x="16" y="79" width="361" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CPv-Kh-iX3">
+                                <rect key="frame" x="16" y="148" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ET-6y-8wY">
+                                <rect key="frame" x="16" y="212" width="361" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UeC-Rz-86g">
+                                <rect key="frame" x="16" y="242" width="361" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="Real"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLA-WC-lCX">
+                                <rect key="frame" x="16" y="281" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bLA-WC-lCX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2z6-pD-sqz"/>
+                            <constraint firstItem="CPv-Kh-iX3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ED0-C4-wkd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MDk-RT-BlD" secondAttribute="trailing" constant="16" id="EUe-vf-UFx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LZL-Pf-OEP" secondAttribute="trailing" constant="16" id="Gfy-8z-8Me"/>
+                            <constraint firstItem="CPv-Kh-iX3" firstAttribute="top" secondItem="LZL-Pf-OEP" secondAttribute="bottom" constant="6" id="Iea-6w-Dhw"/>
+                            <constraint firstItem="LZL-Pf-OEP" firstAttribute="top" secondItem="MDk-RT-BlD" secondAttribute="bottom" constant="6" id="PXw-Oe-N6h"/>
+                            <constraint firstItem="3ET-6y-8wY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RNb-oz-cmW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CPv-Kh-iX3" secondAttribute="trailing" constant="16" id="TxP-GA-AMJ"/>
+                            <constraint firstItem="MDk-RT-BlD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VDL-f8-Dv8"/>
+                            <constraint firstItem="MDk-RT-BlD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="X9x-FD-wHk"/>
+                            <constraint firstItem="3ET-6y-8wY" firstAttribute="top" secondItem="CPv-Kh-iX3" secondAttribute="bottom" constant="30" id="cfG-ag-jOF"/>
+                            <constraint firstItem="UeC-Rz-86g" firstAttribute="top" secondItem="3ET-6y-8wY" secondAttribute="bottom" constant="6" id="hUS-KH-m7z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ET-6y-8wY" secondAttribute="trailing" constant="16" id="j8G-vr-2sG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UeC-Rz-86g" secondAttribute="trailing" constant="16" id="mSv-Zh-Ie5"/>
+                            <constraint firstItem="LZL-Pf-OEP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nqP-js-REP"/>
+                            <constraint firstItem="bLA-WC-lCX" firstAttribute="top" secondItem="UeC-Rz-86g" secondAttribute="bottom" constant="6" id="oMe-zj-bkE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bLA-WC-lCX" secondAttribute="trailing" constant="16" id="rza-BN-Cdr"/>
+                            <constraint firstItem="UeC-Rz-86g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wv1-wa-wCV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fromButton" destination="LZL-Pf-OEP" id="cKE-RR-5XP"/>
+                        <outlet property="fromTextField" destination="CPv-Kh-iX3" id="VZN-0P-FuN"/>
+                        <outlet property="toButton" destination="UeC-Rz-86g" id="m98-g9-Wmv"/>
+                        <outlet property="toTextField" destination="bLA-WC-lCX" id="GSc-cV-asc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
