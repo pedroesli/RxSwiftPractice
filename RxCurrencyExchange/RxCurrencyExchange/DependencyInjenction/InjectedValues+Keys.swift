@@ -8,7 +8,7 @@
 import Foundation
 
 private struct CurrencyProviderKey: InjectionKey {
-    static var currentValue: CurrencyProviding = FixerProvider()
+    static var currentValue: CurrencyProviding = FreeCurrencyProvider()
 }
 
 extension InjectedValues {

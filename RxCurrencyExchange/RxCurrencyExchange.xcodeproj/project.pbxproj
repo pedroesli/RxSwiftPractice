@@ -12,19 +12,42 @@
 		378FD94C2ACA4FCF00D712F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378FD94A2ACA4FCF00D712F7 /* Main.storyboard */; };
 		378FD94E2ACA4FD100D712F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378FD94D2ACA4FD100D712F7 /* Assets.xcassets */; };
 		378FD9512ACA4FD100D712F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378FD94F2ACA4FD100D712F7 /* LaunchScreen.storyboard */; };
-		378FD9592ACA521A00D712F7 /* FixerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FD9582ACA521A00D712F7 /* FixerProvider.swift */; };
+		378FD9592ACA521A00D712F7 /* FreeCurrencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FD9582ACA521A00D712F7 /* FreeCurrencyProvider.swift */; };
 		378FD95E2ACB0E2C00D712F7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FD95D2ACB0E2C00D712F7 /* MainViewController.swift */; };
 		378FD9622ACB0F2900D712F7 /* CurrencyProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FD9612ACB0F2900D712F7 /* CurrencyProviding.swift */; };
-		378FD9652ACB0FB600D712F7 /* PersistenceProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FD9642ACB0FB600D712F7 /* PersistenceProviding.swift */; };
 		378FD9672ACB11E700D712F7 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FD9662ACB11E700D712F7 /* Injected.swift */; };
 		378FD9692ACB11FF00D712F7 /* InjectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FD9682ACB11FF00D712F7 /* InjectedValues.swift */; };
 		378FD96B2ACB121E00D712F7 /* InjectionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FD96A2ACB121E00D712F7 /* InjectionKey.swift */; };
-		378FD96E2ACB126000D712F7 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 378FD96D2ACB126000D712F7 /* RxBlocking */; };
-		378FD9722ACB126000D712F7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 378FD9712ACB126000D712F7 /* RxCocoa */; };
-		378FD9762ACB126000D712F7 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 378FD9752ACB126000D712F7 /* RxRelay */; };
-		378FD97A2ACB126000D712F7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 378FD9792ACB126000D712F7 /* RxSwift */; };
 		378FD9822ACB307C00D712F7 /* InjectedValues+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FD9812ACB307C00D712F7 /* InjectedValues+Keys.swift */; };
+		378FD9882ACB346600D712F7 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FD9872ACB346600D712F7 /* CurrencySymbol.swift */; };
+		378FD9D52ACB4C6A00D712F7 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378FD9D02ACB4C6A00D712F7 /* RxCocoa.xcframework */; };
+		378FD9D62ACB4C6A00D712F7 /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 378FD9D02ACB4C6A00D712F7 /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		378FD9D72ACB4C6A00D712F7 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378FD9D12ACB4C6A00D712F7 /* RxBlocking.xcframework */; };
+		378FD9D82ACB4C6A00D712F7 /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 378FD9D12ACB4C6A00D712F7 /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		378FD9DB2ACB4C6A00D712F7 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378FD9D32ACB4C6A00D712F7 /* RxRelay.xcframework */; };
+		378FD9DC2ACB4C6A00D712F7 /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 378FD9D32ACB4C6A00D712F7 /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		378FD9DD2ACB4C6A00D712F7 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378FD9D42ACB4C6A00D712F7 /* RxSwift.xcframework */; };
+		378FD9DE2ACB4C6A00D712F7 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 378FD9D42ACB4C6A00D712F7 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		378FD9E12ACB55DA00D712F7 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 378FD9E02ACB55DA00D712F7 /* SwiftyJSON */; };
+		378FD9E42ACB55E300D712F7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 378FD9E32ACB55E300D712F7 /* Alamofire */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		378FD9922ACB439B00D712F7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				378FD9DE2ACB4C6A00D712F7 /* RxSwift.xcframework in Embed Frameworks */,
+				378FD9D82ACB4C6A00D712F7 /* RxBlocking.xcframework in Embed Frameworks */,
+				378FD9DC2ACB4C6A00D712F7 /* RxRelay.xcframework in Embed Frameworks */,
+				378FD9D62ACB4C6A00D712F7 /* RxCocoa.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		378FD9412ACA4FCF00D712F7 /* RxCurrencyExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxCurrencyExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,14 +57,19 @@
 		378FD94D2ACA4FD100D712F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		378FD9502ACA4FD100D712F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		378FD9522ACA4FD100D712F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		378FD9582ACA521A00D712F7 /* FixerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixerProvider.swift; sourceTree = "<group>"; };
+		378FD9582ACA521A00D712F7 /* FreeCurrencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeCurrencyProvider.swift; sourceTree = "<group>"; };
 		378FD95D2ACB0E2C00D712F7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		378FD9612ACB0F2900D712F7 /* CurrencyProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyProviding.swift; sourceTree = "<group>"; };
-		378FD9642ACB0FB600D712F7 /* PersistenceProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceProviding.swift; sourceTree = "<group>"; };
 		378FD9662ACB11E700D712F7 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		378FD9682ACB11FF00D712F7 /* InjectedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedValues.swift; sourceTree = "<group>"; };
 		378FD96A2ACB121E00D712F7 /* InjectionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionKey.swift; sourceTree = "<group>"; };
 		378FD9812ACB307C00D712F7 /* InjectedValues+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InjectedValues+Keys.swift"; sourceTree = "<group>"; };
+		378FD9872ACB346600D712F7 /* CurrencySymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbol.swift; sourceTree = "<group>"; };
+		378FD9D02ACB4C6A00D712F7 /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		378FD9D12ACB4C6A00D712F7 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxBlocking.xcframework; path = Carthage/Build/RxBlocking.xcframework; sourceTree = "<group>"; };
+		378FD9D22ACB4C6A00D712F7 /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxTest.xcframework; path = Carthage/Build/RxTest.xcframework; sourceTree = "<group>"; };
+		378FD9D32ACB4C6A00D712F7 /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
+		378FD9D42ACB4C6A00D712F7 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,10 +77,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378FD9762ACB126000D712F7 /* RxRelay in Frameworks */,
-				378FD9722ACB126000D712F7 /* RxCocoa in Frameworks */,
-				378FD96E2ACB126000D712F7 /* RxBlocking in Frameworks */,
-				378FD97A2ACB126000D712F7 /* RxSwift in Frameworks */,
+				378FD9D72ACB4C6A00D712F7 /* RxBlocking.xcframework in Frameworks */,
+				378FD9DB2ACB4C6A00D712F7 /* RxRelay.xcframework in Frameworks */,
+				378FD9DD2ACB4C6A00D712F7 /* RxSwift.xcframework in Frameworks */,
+				378FD9E42ACB55E300D712F7 /* Alamofire in Frameworks */,
+				378FD9E12ACB55DA00D712F7 /* SwiftyJSON in Frameworks */,
+				378FD9D52ACB4C6A00D712F7 /* RxCocoa.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +94,7 @@
 			children = (
 				378FD9432ACA4FCF00D712F7 /* RxCurrencyExchange */,
 				378FD9422ACA4FCF00D712F7 /* Products */,
+				378FD98C2ACB438B00D712F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,8 +142,8 @@
 		378FD95C2ACB0DE700D712F7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				378FD9832ACB332000D712F7 /* Providers */,
 				378FD9602ACB0EED00D712F7 /* Protocols */,
-				378FD9582ACA521A00D712F7 /* FixerProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -132,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				378FD9612ACB0F2900D712F7 /* CurrencyProviding.swift */,
-				378FD9642ACB0FB600D712F7 /* PersistenceProviding.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -140,8 +170,29 @@
 		378FD9632ACB0F9200D712F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				378FD9872ACB346600D712F7 /* CurrencySymbol.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		378FD9832ACB332000D712F7 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				378FD9582ACA521A00D712F7 /* FreeCurrencyProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		378FD98C2ACB438B00D712F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				378FD9D12ACB4C6A00D712F7 /* RxBlocking.xcframework */,
+				378FD9D02ACB4C6A00D712F7 /* RxCocoa.xcframework */,
+				378FD9D32ACB4C6A00D712F7 /* RxRelay.xcframework */,
+				378FD9D42ACB4C6A00D712F7 /* RxSwift.xcframework */,
+				378FD9D22ACB4C6A00D712F7 /* RxTest.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +205,7 @@
 				378FD93D2ACA4FCF00D712F7 /* Sources */,
 				378FD93E2ACA4FCF00D712F7 /* Frameworks */,
 				378FD93F2ACA4FCF00D712F7 /* Resources */,
+				378FD9922ACB439B00D712F7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,10 +213,8 @@
 			);
 			name = RxCurrencyExchange;
 			packageProductDependencies = (
-				378FD96D2ACB126000D712F7 /* RxBlocking */,
-				378FD9712ACB126000D712F7 /* RxCocoa */,
-				378FD9752ACB126000D712F7 /* RxRelay */,
-				378FD9792ACB126000D712F7 /* RxSwift */,
+				378FD9E02ACB55DA00D712F7 /* SwiftyJSON */,
+				378FD9E32ACB55E300D712F7 /* Alamofire */,
 			);
 			productName = RxCurrencyExchange;
 			productReference = 378FD9412ACA4FCF00D712F7 /* RxCurrencyExchange.app */;
@@ -195,7 +245,8 @@
 			);
 			mainGroup = 378FD9382ACA4FCF00D712F7;
 			packageReferences = (
-				378FD96C2ACB126000D712F7 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				378FD9DF2ACB55DA00D712F7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				378FD9E22ACB55E300D712F7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 378FD9422ACA4FCF00D712F7 /* Products */;
 			projectDirPath = "";
@@ -224,14 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378FD9652ACB0FB600D712F7 /* PersistenceProviding.swift in Sources */,
-				378FD9592ACA521A00D712F7 /* FixerProvider.swift in Sources */,
+				378FD9592ACA521A00D712F7 /* FreeCurrencyProvider.swift in Sources */,
 				378FD9672ACB11E700D712F7 /* Injected.swift in Sources */,
 				378FD9622ACB0F2900D712F7 /* CurrencyProviding.swift in Sources */,
 				378FD9452ACA4FCF00D712F7 /* AppDelegate.swift in Sources */,
 				378FD9692ACB11FF00D712F7 /* InjectedValues.swift in Sources */,
 				378FD9472ACA4FCF00D712F7 /* SceneDelegate.swift in Sources */,
 				378FD96B2ACB121E00D712F7 /* InjectionKey.swift in Sources */,
+				378FD9882ACB346600D712F7 /* CurrencySymbol.swift in Sources */,
 				378FD95E2ACB0E2C00D712F7 /* MainViewController.swift in Sources */,
 				378FD9822ACB307C00D712F7 /* InjectedValues+Keys.swift in Sources */,
 			);
@@ -386,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L6B3W3NNQ3;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RxCurrencyExchange/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = RxCurrency;
@@ -394,6 +446,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -415,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L6B3W3NNQ3;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RxCurrencyExchange/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = RxCurrency;
@@ -423,6 +477,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,36 +515,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		378FD96C2ACB126000D712F7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		378FD9DF2ACB55DA00D712F7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.6.0;
+				minimumVersion = 5.0.1;
+			};
+		};
+		378FD9E22ACB55E300D712F7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		378FD96D2ACB126000D712F7 /* RxBlocking */ = {
+		378FD9E02ACB55DA00D712F7 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 378FD96C2ACB126000D712F7 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
+			package = 378FD9DF2ACB55DA00D712F7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
-		378FD9712ACB126000D712F7 /* RxCocoa */ = {
+		378FD9E32ACB55E300D712F7 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 378FD96C2ACB126000D712F7 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		378FD9752ACB126000D712F7 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 378FD96C2ACB126000D712F7 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		378FD9792ACB126000D712F7 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 378FD96C2ACB126000D712F7 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
+			package = 378FD9E22ACB55E300D712F7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
